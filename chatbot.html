@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Showcase + Chatbot</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="page-header">
+    <h1>Product Showcase</h1>
+  </header>
+
+  <!-- SECTIONS -->
+  <main>
+    <!-- Recommended Products -->
+    <section class="product-section">
+      <div class="section-header">
+        <h2>Recommended Products</h2>
+        <button class="scroll-btn" data-target="recommended">&#10145;</button>
+      </div>
+      <div class="product-row" id="recommended">
+        <a href="product1.html" class="product-card">
+          <img src="https://via.placeholder.com/200x120" alt="Laptop 1">
+          <h3>Pro Laptop X1</h3>
+          <p><b>RAM:</b> 16GB</p>
+          <p><b>Chip:</b> Intel i7</p>
+          <p><b>Graphics:</b> NVIDIA RTX 3060</p>
+          <p class="price">$1,499</p>
+        </a>
+        <a href="product2.html" class="product-card">
+          <img src="https://via.placeholder.com/200x120" alt="Laptop 2">
+          <h3>UltraBook Z</h3>
+          <p><b>RAM:</b> 8GB</p>
+          <p><b>Chip:</b> AMD Ryzen 5</p>
+          <p><b>Graphics:</b> Radeon Vega 8</p>
+          <p class="price">$999</p>
+        </a>
+        <a href="product2.html" class="product-card">
+          <img src="https://via.placeholder.com/200x120" alt="Laptop 2">
+          <h3>UltraBook Z</h3>
+          <p><b>RAM:</b> 8GB</p>
+          <p><b>Chip:</b> AMD Ryzen 5</p>
+          <p><b>Graphics:</b> Radeon Vega 8</p>
+          <p class="price">$999</p>
+        </a>
+        <a href="product2.html" class="product-card">
+          <img src="https://via.placeholder.com/200x120" alt="Laptop 2">
+          <h3>UltraBook Z</h3>
+          <p><b>RAM:</b> 8GB</p>
+          <p><b>Chip:</b> AMD Ryzen 5</p>
+          <p><b>Graphics:</b> Radeon Vega 8</p>
+          <p class="price">$999</p>
+        </a>
+        <a href="product2.html" class="product-card">
+          <img src="https://via.placeholder.com/200x120" alt="Laptop 2">
+          <h3>UltraBook Z</h3>
+          <p><b>RAM:</b> 8GB</p>
+          <p><b>Chip:</b> AMD Ryzen 5</p>
+          <p><b>Graphics:</b> Radeon Vega 8</p>
+          <p class="price">$999</p>
+        </a>
+        <a href="product2.html" class="product-card">
+          <img src="https://via.placeholder.com/200x120" alt="Laptop 2">
+          <h3>UltraBook Z</h3>
+          <p><b>RAM:</b> 8GB</p>
+          <p><b>Chip:</b> AMD Ryzen 5</p>
+          <p><b>Graphics:</b> Radeon Vega 8</p>
+          <p class="price">$999</p>
+        </a>
+        <!-- Add more cards here -->
+      </div>
+    </section>
+
+    <!-- New Arrivals -->
+    <section class="product-section">
+      <div class="section-header">
+        <h2>New Arrivals</h2>
+        <button class="scroll-btn" data-target="new-arrivals">&#10145;</button>
+      </div>
+      <div class="product-row" id="new-arrivals">
+        <a href="new1.html" class="product-card">
+          <img src="https://via.placeholder.com/200x120" alt="Laptop 6">
+          <h3>Creator Pro 15</h3>
+          <p><b>RAM:</b> 32GB</p>
+          <p><b>Chip:</b> Intel i7</p>
+          <p><b>Graphics:</b> RTX 3070</p>
+          <p class="price">$2,099</p>
+        </a>
+        <!-- Add more cards -->
+      </div>
+    </section>
+
+    <!-- Offers -->
+    <section class="product-section">
+      <div class="section-header">
+        <h2>Special Offers</h2>
+        <button class="scroll-btn" data-target="offers">&#10145;</button>
+      </div>
+      <div class="product-row" id="offers">
+        <a href="offer1.html" class="product-card">
+          <img src="https://via.placeholder.com/200x120" alt="Offer 1">
+          <h3>Student Pack</h3>
+          <p><b>RAM:</b> 8GB</p>
+          <p><b>Chip:</b> Intel i5</p>
+          <p><b>Graphics:</b> Integrated</p>
+          <p class="price"><del>$899</del> $699</p>
+        </a>
+        <!-- Add more offers -->
+      </div>
+    </section>
+  </main>
+
+  <!-- CHATBOT -->
+  <div class="chatbot-container minimized" id="chatbot">
+    <div class="chatbot-header">
+      <span>Navvy</span>
+      <button id="chatbotToggle">_</button>
+    </div>
+    <div class="chatbot-body">
+      <ul class="chatlist">
+        <li class="bot__output">Hey, I'm Navvy!</li>
+        <li class="bot__output">I will guide you through Mees' portfolio!</li>
+        <li class="bot__output">You can ask me a bunch of things!</li>
+      </ul>
+    </div>
+    <form class="chatbox-area">
+      <textarea placeholder="Talk to me!" class="chatbox"></textarea>
+      <input class="submit-button" type="submit" value="Send">
+    </form>
+  </div>
+
+  <!-- Chatbot Floating Icon -->
+  <button id="chatbotIcon" class="chatbot-icon">💬</button>
+
+  <script src="./script.js"></script>
+</body>
+</html>
